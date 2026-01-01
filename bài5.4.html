@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form phản hồi</title>
+    <style>
+        .feedback-form {
+            width: 400px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .feedback-form h2 {
+            color: #1e90ff;
+            margin-bottom: 25px;
+        }
+
+        .feedback-form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #1e90ff;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .feedback-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .feedback-form button {
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .feedback-form button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="feedback-form">
+        <h2>Ý Kiến Phản Hồi tới Nha Sỹ</h2>
+
+        <form>
+            <label>Họ và tên:</label>
+            <input type="text" placeholder="Nhập họ và tên">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Nhập email của bạn">
+
+            <label>Phản hồi của bạn:</label>
+            <textarea placeholder="Nhập ý kiến của bạn..."></textarea>
+
+            <button type="submit">Gửi ý kiến</button>
+        </form>
+    </div>
+
+</body>
+</html>

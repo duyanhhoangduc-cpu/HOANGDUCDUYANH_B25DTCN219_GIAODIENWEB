@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Địa Chỉ - Nha Khoa</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fb;
+        }
+
+        .clinic-container {
+            width: 420px;
+            margin: 40px auto;
+            background-color: #eef2ff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .clinic-title {
+            color: #2563eb;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .clinic-desc {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .clinic-image {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .branch-title {
+            color: #2563eb;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .branch-list {
+            list-style: none;
+            padding: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .branch-list li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clinic-container">
+        <h2 class="clinic-title">
+            Chăm sóc răng miệng – Mang lại nụ cười tươi sáng
+        </h2>
+
+        <p class="clinic-desc">
+            Phòng khám nha khoa ABC chuyên cung cấp các dịch vụ chăm sóc răng miệng
+            hiện đại, an toàn và uy tín cho mọi khách hàng.
+        </p>
+
+        <img src="data:image/jpeg;base64,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" 
+             alt="Phòng khám nha khoa" 
+             class="clinic-image">
+
+        <h3 class="branch-title">Các Cơ Sở Của Chúng Tôi</h3>
+
+        <ul class="branch-list">
+            <li><strong>Cơ sở 1:</strong> 123 Đường A, Quận 1, TP.HCM</li>
+            <li><strong>Cơ sở 2:</strong> 456 Đường B, Quận 3, TP.HCM</li>
+            <li><strong>Cơ sở 3:</strong> 789 Đường C, Quận 5, TP.HCM</li>
+            <li><strong>Cơ sở 4:</strong> 101 Đường D, Quận 10, TP.HCM</li>
+        </ul>
+    </div>
+
+</body>
+</html>
