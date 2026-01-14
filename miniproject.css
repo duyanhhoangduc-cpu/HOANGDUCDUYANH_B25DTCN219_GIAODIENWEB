@@ -1,0 +1,43 @@
+h1 {
+background-color:rgb(183, 245, 224);
+color:rgb(35, 153, 55)
+}
+.center-text {
+       text-align: center;
+}
+img {
+    width: 50%;
+    height:auto;
+    display: block;
+    margin: 0 auto;
+}
+p {
+      text-align: center;
+    background-color: rgb(14, 74, 77);
+    color: aliceblue;
+    margin-top: 0;  
+}
+h4 {
+    background-color:rgb(193, 245, 245) ;
+       text-align: center;
+}
+a {
+    color: rgb(44, 92, 92);
+    text-decoration: none;
+}
+.line {
+  height: 30px;
+  background-color:rgb(193, 245, 245) ;
+  margin-top: 0;      /* sát p phía trên */
+  margin-bottom: 5px;
+}
+.line2 {
+    height: 30px;
+  background-color:rgb(193, 245, 245) ;
+  margin-bottom: 0; 
+}
+
+
+
+
+
