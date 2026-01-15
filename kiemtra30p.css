@@ -1,4 +1,23 @@
-h1 {
-    background color:#fde68a;
-    color:#92400e;
+div{
+    background-color: #0ea5e9;
+    border-radius: 20px
+
 }
+.center-text {
+    border-radius: 20px;
+    text-align:center;
+    background-color: #0ea5e9;
+    color:aliceblue
+
+}
+.mota {
+    text-align:center;
+    background-color: #0ea5e9;
+    color:aliceblue
+}
+.mucluc {
+    background-color:#7ebdda;
+    text-align:center;
+    border-radius: 20px;
+}
+
