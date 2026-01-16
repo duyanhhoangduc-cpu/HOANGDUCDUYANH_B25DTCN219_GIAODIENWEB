@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+header div {
+    background-color:#fde68a ;
+    text-align: center;
+    height:161px ;
+    padding-top: 55px;
+
+}
+header div h1 {
+    color: #78350f;
+    font-weight: 1000px ;
+}
+header div p {
+    color:#484335;
+    padding-top: 20px;
+    font-weight: 1000px;
+}
+
+header nav {
+    text-align: center;
+    background-color:#fed7aa ;
+    height: 42px ;
+    padding-top: 22px;
+    font-weight:1000px ;
+}
+header nav a {
+    text-decoration: none;
+    padding: 20px;
+    color:#bb5b12;
+}
+header nav a:hover {
+    background-color:#863515 ;
+    color:white;
+    border-radius:15px ;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+}
+
+.sc1 {
+    position: relative;
+}
+main section img {
+
+    width:100%;
+    height:auto;
+}
+.mota {
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top:444px;
+    left:1200px;
+    height:148px ;
+    width:423px ;
+    font-size: 18px;
+    font-weight: 1000px;
+}
+main section div h2 {
+    padding-left:25px;
+    padding-top: 20px;
+}
+main section div p {
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.sc2 {
+    background-color:#fff7ed ;
+    text-align: center;
+}
+
+.sc2 h2 {
+    text-align: center;
+    font-size:30px;
+    font-weight:1000px;
+    padding-top:60px ;
+    color:#924;
+    margin:auto ;
+}
+
+.sc2 .bacsi {
+    text-align: center;
+    margin-top: 30px;
+    display:inline-block;
+    border-radius: 15px;
+    width:100% ;
+}
+.sc2 .bacsi div {
+    background:white;
+    margin-left: 30px;
+    padding: 20px ;
+    border-radius:15px ;
+    display: inline-block;
+    width:20%;
+}
+.sc2 .bacsi div p {
+    max-width: 100%;
+}
+
+.mota2 {
+    padding-top: 40px;
+}
+.mota2 h2 {
+    font-size: 28px;
+    color: #92400e;
+    margin-bottom: 30px;
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
