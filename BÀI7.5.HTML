@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gói Chăm Sóc Răng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .card {
+            width: 320px;
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+
+        .badge-hot {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff0000;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 15px;
+            z-index: 10;
+        }
+
+        .card-header {
+            background-color: #00f2f2;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+        .card-body {
+            padding: 25px;
+            color: #444;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+
+        .text-green {
+            color: #00a651;
+            font-weight: bold;
+        }
+
+
+        .btn-booking {
+            display: block;
+            width: 80%;
+            margin: 10px auto 0;
+            background-color: #00f2f2;
+            color: #000;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-booking:hover {
+            opacity: 0.8;
+            box-shadow: 0 4px 10px rgba(0, 242, 242, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="badge-hot">HOT</div>
+
+        <div class="card-header">
+            GÓI CHĂM SÓC RĂNG
+        </div>
+
+        <div class="card-body">
+            <p>Dịch vụ: <span class="text-green">Tẩy trắng răng</span></p>
+            <p>Công nghệ: Laser Whitening</p>
+            <p>Thời gian: <strong>60 phút</strong></p>
+            <p>Bảo hành: <strong>6 tháng</strong></p>
+            <p>Giá ưu đãi: <span class="text-green">1.600.000 đ</span></p>
+
+            <a href="#" class="btn-booking">ĐẶT LỊCH NGAY</a>
+        </div>
+    </div>
+
+</body>
+</html>

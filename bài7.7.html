@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu Feedback Nha Khoa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .feedback-form {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            color: #008b8b;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #008b8b;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; 
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #008b8b;
+        }
+
+        textarea.form-control {
+            height: 100px;
+            resize: vertical; 
+
+        }
+        .btn-submit {
+            width: 100%;
+            background-color: #008b8b;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="feedback-form">
+        <div class="form-title">Biểu Mẫu Feedback Phòng Khám Nha Khoa</div>
+
+        <form>
+            <div class="form-group">
+                <label for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" class="form-control" placeholder="Nhập họ tên">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Dịch vụ đã sử dụng</label>
+                <select id="service" class="form-control">
+                    <option value="tay-trang">Tẩy trắng răng</option>
+                    <option value="nieng-rang">Niềng răng chỉnh nha</option>
+                    <option value="implant">Cấy ghép Implant</option>
+                    <option value="kham-dinh-ky">Khám răng định kỳ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction">Mức độ hài lòng</label>
+                <select id="satisfaction" class="form-control">
+                    <option value="rat-hai-long">Rất hài lòng</option>
+                    <option value="hai-long">Hài lòng</option>
+                    <option value="binh-thuong">Bình thường</option>
+                    <option value="khong-hai-long">Không hài lòng</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Nội dung phản hồi</label>
+                <textarea id="message" class="form-control" placeholder="Vui lòng cho chúng tôi biết cảm nhận của bạn..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Gửi feedback</button>
+        </form>
+    </div>
+
+</body>
+</html>

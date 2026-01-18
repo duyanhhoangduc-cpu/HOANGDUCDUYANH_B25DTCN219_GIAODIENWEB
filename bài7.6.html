@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiến trình Niềng răng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .treatment-card {
+            background-color: #ffffff;
+            width: 450px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .status-badge {
+            background-color: #ffe8cc; 
+            color: #d97706; 
+            font-size: 11px;
+            font-weight: bold;
+            padding: 5px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+    
+        .info-row {
+            font-size: 15px;
+            color: #555;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-row strong {
+            color: #333;
+        }
+
+       
+        .progress-section {
+            margin-top: 25px;
+        }
+
+        .progress-label {
+            color: #00a884; 
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .progress-bar-bg {
+            background-color: #e9ecef;
+            height: 10px;
+            border-radius: 10px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            background-color: #00ff40; 
+            height: 100%;
+            width: 65%; 
+            border-radius: 10px;
+        }
+
+        .footer-note {
+            font-size: 13px;
+            color: #888;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="treatment-card">
+        <div class="card-header">
+            <h2 class="title">Niềng răng chỉnh nha</h2>
+            <span class="status-badge">Đang điều trị</span>
+        </div>
+
+        <div class="info-row">
+            👤 &nbsp; <strong>Bác sĩ:</strong> &nbsp; BS. Nguyễn Minh Tâm
+        </div>
+        <div class="info-row">
+            💰 &nbsp; <strong>Chi phí:</strong> &nbsp; 25.000.000 đ
+        </div>
+
+        <div class="progress-section">
+            <span class="progress-label">Tiến trình điều trị:</span>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill"></div>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            Dự kiến kết thúc: 12 tháng
+        </div>
+    </div>
+
+</body>
+</html>
