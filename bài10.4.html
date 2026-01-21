@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>La Belle Époque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #fdfcf8;
+            color: #333;
+        }
+        header {
+            height: 80px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #9b1c1c;
+            font-family: "Times New Roman", serif;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .btn-book {
+            background: #9b1c1c;
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            height: 480px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-family: "Times New Roman", serif;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            line-height: 1.6;
+        }
+
+        .hero a {
+            background: #9b1c1c;
+            padding: 12px 36px;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 1100px;
+            margin: 60px auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 34px;
+            font-family: "Times New Roman", serif;
+            color: #9b1c1c;
+            margin-bottom: 40px;
+        }
+
+        .card-row {
+            display: flex;
+            gap: 30px;
+        }
+
+        .card {
+            flex: 1;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h3 {
+            font-family: "Times New Roman", serif;
+            margin-bottom: 6px;
+        }
+
+        .price {
+            color: #9b1c1c;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+        .booking {
+            background: #9b1c1c;
+            padding: 60px 0;
+            color: #fff;
+        }
+
+        .booking h2 {
+            text-align: center;
+            font-family: "Times New Roman", serif;
+            margin-bottom: 30px;
+        }
+
+        .booking form {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .booking input {
+            padding: 10px;
+            width: 180px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        .booking button {
+            background: #fff;
+            color: #9b1c1c;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            background: #3a1f1f;
+            color: #ccc;
+            padding: 50px 0;
+        }
+
+        .footer-row {
+            width: 1100px;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+        }
+
+        .footer-col {
+            flex: 1;
+        }
+
+        .footer-col h3 {
+            color: #e7b3b3;
+            margin-bottom: 15px;
+            font-family: "Times New Roman", serif;
+        }
+
+        .footer-col p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">La Belle Époque</div>
+    <nav>
+        <a href="">Trang chủ</a>
+        <a href="">Thực đơn</a>
+        <a href="">Giới thiệu</a>
+        <a href="">Liên hệ</a>
+    </nav>
+    <a href="#" class="btn-book">Đặt bàn</a>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Đặt Bàn Tại La Belle Époque</h1>
+        <p>Không gian sang trọng, ẩm thực tinh tế mang phong cách châu Âu cổ điển.</p>
+        <a href="#">Đặt ngay</a>
+    </div>
+</section>
+
+<section class="container">
+    <h2 class="title">Món Ăn Nổi Bật</h2>
+    <div class="card-row">
+        <div class="card">
+            <img src="">
+            <div class="card-body">
+                <h3>Bò Bít Tết</h3>
+                <div class="price">450.000đ</div>
+                <p class="desc">Thịt bò nhập khẩu, nướng than hoa, sốt rượu vang đỏ.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="">
+            <div class="card-body">
+                <h3>Mỳ Ý Hải Sản</h3>
+                <div class="price">320.000đ</div>
+                <p class="desc">Hải sản tươi, sốt cà chua Ý truyền thống.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="">
+            <div class="card-body">
+                <h3>Tráng Miệng</h3>
+                <div class="price">180.000đ</div>
+                <p class="desc">Bánh ngọt Pháp kết hợp trái cây tươi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="booking">
+    <h2>Đặt Bàn Ngay Hôm Nay</h2>
+    <form>
+        <input type="text" placeholder="Họ tên">
+        <input type="date">
+        <input type="time">
+        <input type="number" placeholder="Số khách">
+        <button>Gửi yêu cầu</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-row">
+        <div class="footer-col">
+            <h3>La Belle Époque</h3>
+            <p>Nhà hàng phong cách Pháp cổ điển, nơi tinh hoa ẩm thực hội tụ.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Liên hệ</h3>
+            <p>📍 Hà Nội</p>
+            <p>📞 0123 456 789</p>
+            <p>✉ contact@labelle.com</p>
+        </div>
+        <div class="footer-col">
+            <h3>Giờ mở cửa</h3>
+            <p>Thứ 2 – CN: 10:00 – 22:00</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

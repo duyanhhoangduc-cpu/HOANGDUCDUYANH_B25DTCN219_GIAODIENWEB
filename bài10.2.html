@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưới Món Ăn Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .food-grid {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .food-item {
+            flex: 0 1 calc(33.33% - 20px); 
+            min-width: 150px;
+            text-align: center;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .food-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .food-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .food-item p {
+            margin: 0;
+            font-weight: bold;
+            color: #444;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="food-grid">
+        <div class="food-item">
+            <img src="23e6923c8458d3f6f5a5d92b481aed5852e0962b.jpg" alt="Macaron">
+            <p>Bánh Macaron</p>
+        </div>
+
+        <div class="food-item">
+            <img src="73a29020f33b585fb0eaed765a2b8950a4aa380f (1).png" alt="Hamburger">
+            <p>Hamburger</p>
+        </div>
+
+        <div class="food-item">
+            <img src="73a29020f33b585fb0eaed765a2b8950a4aa380f (1).png" alt="Salad">
+            <p>Salad Rau Củ</p>
+        </div>
+
+        <div class="food-item">
+            <img src="73a29020f33b585fb0eaed765a2b8950a4aa380f (1).png" alt="Grilled Pork">
+            <p>Thịt Nướng</p>
+        </div>
+
+        <div class="food-item">
+            <img src="73a29020f33b585fb0eaed765a2b8950a4aa380f (1).png" alt="Beef Steak">
+            <p>Bít Tết Bò</p>
+        </div>
+
+        <div class="food-item">
+            <img src="73a29020f33b585fb0eaed765a2b8950a4aa380f (1).png" alt="Chicken">
+            <p>Gà Chiên</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Món ăn - Flexbox</title>
+    <style>
+        
+        .food-section {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        
+        .food-container {
+            display: flex;             
+            justify-content: center;    
+            align-items: center;        
+            gap: 20px;                  
+            background-color: #f5f5f5;  
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+       
+        .food-item {
+            display: flex;
+            flex-direction: column;    
+            align-items: center;        
+            text-align: center;
+        }
+
+        .food-item img {
+            width: 80px;                
+            height: 80px;
+            object-fit: cover;          
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .food-name {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="food-section">
+        <div class="title">Món ăn:</div>
+
+        <div class="food-container">
+            
+            <div class="food-item">
+                <img src="" alt="Gỏi cuốn">
+                <span class="food-name">Gỏi cuốn</span>
+            </div>
+
+            <div class="food-item">
+                <img src="" alt="Bún đậu">
+                <span class="food-name">Bún đậu</span>
+            </div>
+
+            <div class="food-item">
+                <img src="" alt="Phở bò">
+                <span class="food-name">Phở bò</span>
+            </div>
+
+            <div class="food-item">
+                <img src="" alt="Bánh mì">
+                <span class="food-name">Bánh mì</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

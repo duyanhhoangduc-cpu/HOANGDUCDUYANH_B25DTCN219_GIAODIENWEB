@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height:500 px;
+        border:3px solid black;
+        display: flex;
+        flex-direction:row;
+        /*1.theo chiều ngang và thay row với collum sẽ là chiều dọc */
+        /*2.row-reverse,collum đổi chiều từ trái sang phải thành phải sang trái,trên xuống dưới và dưới lên */
+        flex-wrap:nowrap;
+        /* đẩy các ptu xuống dòng ( lần lượt từ ptu cuối cùng) nếu thu nhỏ màn hình */
+        /* wrap-reverse giữ phần tử cuối trên dòng và đẩy các ptu xuống dòng */
+        justify-content:flex-start;
+        /* căn chỉnh các ptu con theo chiều trục chính (đang là trục ngang vì là row),
+        vdu thay start thành center thì sẽ ra giữa */
+        /* flex-start: sắp xếp vị trí ptu con dồn về vị trí bắt đầu ( row là từ trái sang phải )*/
+        /* flex-end: --------------------------dồn về vị trí kết thúc ( theo row là từ bên phải) */
+        /* center: đẩy các ptu con ra giữa */
+        /* space-around: tất cả các phần tử con sẽ chiếm chọn phần tử cha ( khoảng cách sẽ tự to ra để lấp ptu cha)*/
+        /* space-between: giãn đều khoảng cách các ptu ra giống với around nma khác là có 2 ptu ở đầu tiên và ở cuối
+        các ptu bên trong cách đều nhau, còn với around ở 2 đầu mút sẽ có khoảng cách là 1 nửa khoảng cách giữa
+        2 ptu bên trong */
+        /* space-evenly:cách đều, 2 đầu mút có khoảng cách = nhau = với khoảng cách các ptu bên trong */
+        align-items:center;
+        /* căn chỉnh trục phụ ( nếu trục chính row là trục chính thì trục phụ sẽ là trục dọc) */
+        /* gap (thuộc tính riêng): tạo khoảng cách giữa các ptu con */
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="ff"></div>
+        <div class="five"></div>
+    </div>
+
+
+</body>
+</html>
